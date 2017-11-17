@@ -12,7 +12,8 @@ let HomePage = new Component({
   template: './home.html',
   name: 'home',
   globalStyles: [
-    '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+    '../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
+    '../../css/global.css'
   ],
   globalScripts: [
     '../../../node_modules/jquery/dist/jquery.min.js',
@@ -25,7 +26,8 @@ let HomePage = new Component({
       values: {
         title: `${globalValues.title} - Home`
       }
-    }
+    },
+    require('../../components/sidebar/sidebar.quoia')
   ]
 });
 

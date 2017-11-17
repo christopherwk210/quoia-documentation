@@ -1,7 +1,7 @@
-// Import Quoia
+// Imports
 const { build } = require('quoia');
 
-// Create config
+// Quoia config
 const config = {
   outDir: './docs',
   rootPage: require('./src/pages/home/home.quoia'),
@@ -9,5 +9,5 @@ const config = {
   assets: './src/assets'
 };
 
-// Build
+// Execute Quoia build
 build(config);
