@@ -12,8 +12,7 @@ let HomePage = new Component({
   template: './home.html',
   name: 'home',
   globalStyles: [
-    '../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
-    '../../css/global.css'
+    '../../css/global.scss'
   ],
   globalScripts: [
     '../../../node_modules/jquery/dist/jquery.min.js',

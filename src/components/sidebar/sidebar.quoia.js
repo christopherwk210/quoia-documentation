@@ -10,7 +10,7 @@ let SidebarComponent = new Component({
   name: 'sidebar',
   selector: 'quoia-sidebar',
   externalStyles: [
-    './sidebar.css'
+    './sidebar.scss'
   ],
   values: {
     pages: [
