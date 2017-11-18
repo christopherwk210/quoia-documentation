@@ -4,7 +4,7 @@
   "description": "Documentation source for Quoia.",
   "scripts": {
     "build": "gulp build",
-    "dev": "gulp dev"
+    "dev": "node quoia.build.js && gulp dev"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "handlebars": "^4.0.11",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
-    "quoia": "^1.2.1"
+    "quoia": "^1.2.6"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

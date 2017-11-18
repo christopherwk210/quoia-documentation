@@ -8,7 +8,15 @@ const { Component } = require('quoia');
 let SidebarComponent = new Component({
   template: './sidebar.html',
   name: 'sidebar',
-  selector: 'quoia-sidebar'
+  selector: 'quoia-sidebar',
+  externalStyles: [
+    './sidebar.css'
+  ],
+  values: {
+    pages: [
+      'Overview'
+    ]
+  }
 });
 
 module.exports = SidebarComponent;
