@@ -13,6 +13,10 @@ html, body {
   height: 100%;
 }
 
+.right-col-parent {
+  overflow-y: scroll;
+}
+
 .right-col {
   max-width: 800px;
   margin: 0 auto;

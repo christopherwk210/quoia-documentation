@@ -5873,15 +5873,18 @@ html, body {
 .page-container, .page-container > .row {
   height: 100%; }
 
+.right-col-parent {
+  overflow-y: scroll; }
+
 .right-col {
   max-width: 800px;
   margin: 0 auto;
   overflow-y: scroll;
   padding-top: 4rem; }
-.main-header.-qc5d039814-5a128dee9 {
+.main-header.-q0a72699cc-db7311363 {
   margin-top: 5rem;
   position: relative; }
-  .main-header.-qc5d039814-5a128dee9:before {
+  .main-header.-q0a72699cc-db7311363:before {
     content: '';
     background-image: url("/assets/images/quoia.png");
     width: 90px;
@@ -5892,13 +5895,13 @@ html, body {
     background-position: center;
     left: 50%;
     transform: translateX(-50%) translateY(-100%); }
-aside.-q06df49136-86a930a9b {
+aside.-qd89547a43-a25770ca1 {
   width: 300px;
   background-color: rgba(12, 148, 67, 0.1);
   height: 100%;
   overflow-y: scroll; }
 
-h1.-q06df49136-86a930a9b {
+h1.-qd89547a43-a25770ca1 {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -5906,6 +5909,8 @@ h1.-q06df49136-86a930a9b {
   font-weight: 200;
   font-size: 2rem; }
 
-.nav-list.-q06df49136-86a930a9b {
+.nav-list.-qd89547a43-a25770ca1 {
   padding: 1rem 2rem;
   font-size: larger; }
+  .nav-list.-qd89547a43-a25770ca1 li.-qd89547a43-a25770ca1 {
+    margin: 0.5rem 0; }
