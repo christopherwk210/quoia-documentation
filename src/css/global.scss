@@ -1,3 +1,6 @@
+$primary: #0C9443;
+$secondary: #FCB040;
+
 @import "bootstrap/scss/bootstrap.scss";
 
 html, body {
@@ -8,4 +11,11 @@ html, body {
 
 .page-container, .page-container > .row {
   height: 100%;
+}
+
+.right-col {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  padding-top: 4rem;
 }

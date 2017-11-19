@@ -19,6 +19,9 @@ let HomePage = new Component({
     '../../../node_modules/popper.js/dist/umd/popper.min.js',
     '../../../node_modules/bootstrap/dist/js/bootstrap.min.js'
   ],
+  externalStyles: [
+    './home.scss'
+  ],
   imports: [
     {
       component: require('../../components/head-tag/head-tag.quoia'),
