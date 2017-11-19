@@ -30,6 +30,9 @@ let HomePage = new Component({
       }
     },
     require('../../components/sidebar/sidebar.quoia')
+  ],
+  children: [
+    require('../getting-started/getting-started.quoia')
   ]
 });
 

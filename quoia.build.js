@@ -7,7 +7,10 @@ const config = {
   outDir: './docs',
   rootPage: require('./src/pages/home/home.quoia'),
   templatingEngine: 'handlebars',
-  assets: './src/assets',
+  rootCopy: [
+    './src/assets',
+    './src/root/'
+  ],
   cssPreprocessor: 'sass',
   cssIncludePaths: [
     path.join(__dirname, './node_modules'),

@@ -5881,20 +5881,6 @@ html, body {
   margin: 0 auto;
   overflow-y: scroll;
   padding-top: 4rem; }
-.main-header.-q70f06a435-62f33055d {
-  margin-top: 5rem;
-  position: relative; }
-  .main-header.-q70f06a435-62f33055d:before {
-    content: '';
-    background-image: url("/assets/images/quoia.png");
-    width: 90px;
-    height: 120px;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 50%;
-    transform: translateX(-50%) translateY(-100%); }
 aside.-qff4010af3-0c7f532c6 {
   width: 300px;
   background-color: rgba(12, 148, 67, 0.1);
