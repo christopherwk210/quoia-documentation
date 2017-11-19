@@ -6,17 +6,12 @@ const { Component } = require('quoia');
  * Defines the sidebar component
  */
 let SidebarComponent = new Component({
-  template: './sidebar.html',
+  template: './sidebar.handlebars',
   name: 'sidebar',
   selector: 'quoia-sidebar',
   externalStyles: [
     './sidebar.scss'
-  ],
-  values: {
-    pages: [
-      'Overview'
-    ]
-  }
+  ]
 });
 
 module.exports = SidebarComponent;

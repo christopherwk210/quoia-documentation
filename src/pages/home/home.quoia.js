@@ -29,7 +29,12 @@ let HomePage = new Component({
         title: `${globalValues.title} - Home`
       }
     },
-    require('../../components/sidebar/sidebar.quoia')
+    {
+      component: require('../../components/sidebar/sidebar.quoia'),
+      values: {
+        home: true
+      }
+    }
   ],
   children: [
     require('../getting-started/getting-started.quoia')

@@ -11,6 +11,12 @@ const globalValues = require('../../config/global-values');
 let GettingStartedPage = new Component({
   template: './getting-started.html',
   name: 'getting-started',
+  externalStyles: [
+    '../../css/prism.scss'
+  ],
+  externalScripts: [
+    '../../../node_modules/prismjs/prism.js'
+  ],
   imports: [
     {
       component: require('../../components/head-tag/head-tag.quoia'),
@@ -18,7 +24,12 @@ let GettingStartedPage = new Component({
         title: `${globalValues.title} - Getting Started`
       }
     },
-    require('../../components/sidebar/sidebar.quoia')
+    {
+      component: require('../../components/sidebar/sidebar.quoia'),
+      values: {
+        gettingStarted: true
+      }
+    }
   ]
 });
 
