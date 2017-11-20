@@ -1,34 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <title>Quoia Docs - Getting Started</title>
-
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-<link href="getting-started.css" rel="stylesheet"></head>
-
+  <quoia-head>
   <body>
     <div class="container-fluid page-container">
       <div class="row">
-        <aside class="-q1a8de7f38-54affc7ec">
-  <h1 class="-q1a8de7f38-54affc7ec">Quoia</h1>
-  <ul class="list-unstyled nav-list -q1a8de7f38-54affc7ec">
-    <li class="-q1a8de7f38-54affc7ec"><a  href="/" class="-q1a8de7f38-54affc7ec">Home</a></li>
-    <li class="-q1a8de7f38-54affc7ec"><a class="active -q1a8de7f38-54affc7ec" href="/getting-started">Getting Started</a></li>
-    <li class="-q1a8de7f38-54affc7ec"><a href="#" class="-q1a8de7f38-54affc7ec">Build Configuration</a></li>
-    <li class="-q1a8de7f38-54affc7ec"><a href="#" class="-q1a8de7f38-54affc7ec">Components</a></li>
-    <li class="-q1a8de7f38-54affc7ec"><a href="#" class="-q1a8de7f38-54affc7ec">Extending</a></li>
-  </ul>
-</aside>
-
+        <quoia-sidebar>
         <div class="col right-col-parent">
           <div class="right-col">
             <h2 class="display-4 text-center mb-4">Getting Started</h2>
@@ -41,18 +17,7 @@
               In the root directory of your project, create new file <code>quoia.build.js</code>
               and set up the build process:
             </p>
-            <pre lang="javascript"><code class="language-javascript">// Imports
-const { build } &#x3D; require(&#x27;quoia&#x27;);
-
-// Configuration
-let config &#x3D; {
-  outDir: &#x27;./dist&#x27;,
-  rootPage: require(&#x27;./src/home.quoia&#x27;)
-};
-
-// Build with Quoia
-build(config);
-</code></pre>
+            <pre lang="javascript"><code class="language-javascript">{{buildScriptSample}}</code></pre>
             <p>
               This is the file we'll run with node to build our project (<code>node ./quoia.build.js</code>).
             </p>
@@ -80,20 +45,7 @@ build(config);
               Create a <code>src</code> folder in the root directory of your project, and inside
               there create a <code>home.quoia.js</code> file:
             </p>
-            <pre lang="javascript"><code class="language-javascript">// Imports
-const { Component } &#x3D; require(&#x27;quoia&#x27;);
-
-/**
- * HomePage
- * Root page of the website
- */
-let HomePage &#x3D; new Component({
-  template: &#x27;./home.html&#x27;,
-  name: &#x27;home&#x27;
-});
-
-module.exports &#x3D; HomePage;
-</code></pre>
+            <pre lang="javascript"><code class="language-javascript">{{homeComponentSample}}</code></pre>
             <p>
               Here we are importing the Component class from Quoia, and using it define our home
               component. In this example, our component has the following properties defined:
@@ -115,19 +67,7 @@ module.exports &#x3D; HomePage;
             <p>
               Let's add a <code>./src/home.html</code> template file for our home page:
             </p>
-            <pre lang="html"><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang&#x3D;&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-    &lt;meta http-equiv&#x3D;&quot;x-ua-compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;
-    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, shrink-to-fit&#x3D;no&quot;&gt;
-    &lt;title&gt;Built with Quoia&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+            <pre lang="html"><code class="language-html">{{homeTemplateSample}}</code></pre>
             <p>
               We now have a complete component! Let's build our project to make sure everything
               is set up right. Run the build script with node:
@@ -150,56 +90,15 @@ module.exports &#x3D; HomePage;
               <code>./src/pages/about</code> and populate it with a template and component file:
             </p>
             <p class="prism-topper"><code>./src/pages/about/about.quoia.js</code></p>
-            <pre lang="javascript"><code class="language-javascript">// Imports
-const { Component } &#x3D; require(&#x27;quoia&#x27;);
-
-/**
- * AboutPage
- * About page of our website
- */
-let AboutPage &#x3D; new Component({
-  template: &#x27;./about.html&#x27;,
-  name: &#x27;about&#x27;
-});
-
-module.exports &#x3D; AboutPage;
-</code></pre>
+            <pre lang="javascript"><code class="language-javascript">{{aboutComponentSample}}</code></pre>
             <p class="prism-topper"><code>./src/pages/about/about.html</code></p>
-            <pre lang="html"><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang&#x3D;&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-    &lt;meta http-equiv&#x3D;&quot;x-ua-compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;
-    &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, shrink-to-fit&#x3D;no&quot;&gt;
-    &lt;title&gt;Built with Quoia&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;About&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+            <pre lang="html"><code class="language-html">{{aboutTemplateSample}}</code></pre>
             <p>
               In order for Quoia to recognize this component, we need to add it as a child of
               our home component:
             </p>
             <p class="prism-topper"><code>./src/home.quoia.js</code></p>
-            <pre lang="javascript"><code class="language-javascript">// Imports
-const { Component } &#x3D; require(&#x27;quoia&#x27;);
-
-/**
- * HomePage
- * Root page of the website
- */
-let HomePage &#x3D; new Component({
-  template: &#x27;./home.html&#x27;,
-  name: &#x27;home&#x27;,
-  children: [
-    require(&#x27;./pages/about/about.quoia&#x27;)
-  ]
-});
-
-module.exports &#x3D; HomePage;
-</code></pre>
+            <pre lang="javascript"><code class="language-javascript">{{homeComponentSample2}}</code></pre>
             <p>
               If we build our project again, you'll see that our <code>./dist</code> directory now has
               a folder <code>about</code> which contains and <code>index.html</code> with the about
@@ -217,29 +116,9 @@ module.exports &#x3D; HomePage;
               let's make a folder <code>head-tag</code> and add our component files:
             </p>
             <p class="prism-topper"><code>./src/components/head-tag/head-tag.quoia.js</code></p>
-            <pre lang="javascript"><code class="language-javascript">// Imports
-const { Component } &#x3D; require(&#x27;quoia&#x27;);
-
-/**
- * HeadTagComponent
- * Defines the &lt;head&gt; tag of the document
- */
-let HeadTagComponent &#x3D; new Component({
-  template: &#x27;./head-tag.html&#x27;,
-  name: &#x27;head&#x27;,
-  selector: &#x27;quoia-head&#x27;
-});
-
-module.exports &#x3D; HeadTagComponent;
-</code></pre>
+            <pre lang="javascript"><code class="language-javascript">{{headComponentSample}}</code></pre>
             <p class="prism-topper"><code>./src/components/head-tag/head-tag.html</code></p>
-            <pre lang="html"><code class="language-html">&lt;head&gt;
-  &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
-  &lt;meta http-equiv&#x3D;&quot;x-ua-compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;
-  &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1, shrink-to-fit&#x3D;no&quot;&gt;
-  &lt;title&gt;Built with Quoia&lt;/title&gt;
-&lt;/head&gt;
-</code></pre>
+            <pre lang="html"><code class="language-html">{{headTemplateSample}}</code></pre>
             <p>
               In our template, we have the common <code>&lt;head&gt;</code> HTML code from each page.
               In our component file, we specify the template path and name as usual, but we also add
@@ -248,23 +127,9 @@ module.exports &#x3D; HeadTagComponent;
               page templates:
             </p>
             <p class="prism-topper"><code>./src/home.html</code></p>
-            <pre lang="html"><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang&#x3D;&quot;en&quot;&gt;
-  &lt;quoia-head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+            <pre lang="html"><code class="language-html">{{homeTemplateRevised}}</code></pre>
             <p class="prism-topper"><code>./src/pages/about/about.html</code></p>
-            <pre lang="html"><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang&#x3D;&quot;en&quot;&gt;
-  &lt;quoia-head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;About&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+            <pre lang="html"><code class="language-html">{{aboutTemplateRevised}}</code></pre>
             <div class="alert alert-secondary" role="alert">
               Quoia components do <strong>not</strong> have a closing tag!
             </div>
@@ -283,5 +148,5 @@ module.exports &#x3D; HeadTagComponent;
         </div>
       </div>
     </div>
-  <script src="getting-started.js"></script></body>
+  </body>
 </html>

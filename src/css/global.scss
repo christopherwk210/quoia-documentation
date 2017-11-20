@@ -4,7 +4,6 @@
 html, body {
   height: 100%;
   overflow: hidden;
-  background-color: rgb(250, 250, 250);
 }
 
 .page-container, .page-container > .row {
@@ -13,6 +12,7 @@ html, body {
 
 .right-col-parent {
   overflow-y: scroll;
+  padding-bottom: 7rem;
 }
 
 .right-col {

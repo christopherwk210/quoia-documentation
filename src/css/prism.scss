@@ -1,15 +1,32 @@
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
+.prism-topper {
+  margin-bottom: -2rem;
+  margin-top: 2rem;
+  background-color: #F5F2F0;
+  position: relative;
+  padding-top: 0.5em;
+  padding-left: 1em;  
 
- code[class*="language-"],
+  code {
+    background-color: inherit;
+    padding: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #758090;
+    left: 1em;
+    right: 1em;
+    bottom: -0.5em;
+    z-index: 1;
+    opacity: 0.5;
+  }
+}
+
+code[class*="language-"],
  pre[class*="language-"] {
    color: black;
    background: none;
-   text-shadow: 0 1px white;
-  //  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
    text-align: left;
    white-space: pre;
    word-spacing: normal;
@@ -49,8 +66,23 @@
  /* Code blocks */
  pre[class*="language-"] {
    padding: 1em;
-   margin: .5em 0;
+   margin: 2rem 0;
    overflow: auto;
+   position: relative;
+
+   &:after {
+     content: attr(lang);
+     position: absolute;
+     top: 1em;
+     right: 1em;
+     color: slategray;
+     opacity: 0.4;
+     transition: opacity 1s;
+   }
+
+   &:hover:after {
+     opacity: 0.7;
+   }
  }
  
  :not(pre) > code[class*="language-"],
@@ -105,7 +137,6 @@
  .language-css .token.string,
  .style .token.string {
    color: #a67f59;
-   background: hsla(0, 0%, 100%, .5);
  }
  
  .token.atrule,

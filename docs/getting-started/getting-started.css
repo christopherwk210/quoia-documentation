@@ -5867,30 +5867,44 @@ a.text-dark:focus, a.text-dark:hover {
 
 html, body {
   height: 100%;
-  overflow: hidden;
-  background-color: #fafafa; }
+  overflow: hidden; }
 
 .page-container, .page-container > .row {
   height: 100%; }
 
 .right-col-parent {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding-bottom: 7rem; }
 
 .right-col {
   max-width: 800px;
   margin: 0 auto;
   overflow-y: scroll;
   padding-top: 4rem; }
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
+.prism-topper {
+  margin-bottom: -2rem;
+  margin-top: 2rem;
+  background-color: #F5F2F0;
+  position: relative;
+  padding-top: 0.5em;
+  padding-left: 1em; }
+  .prism-topper code {
+    background-color: inherit;
+    padding: 0; }
+  .prism-topper:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #758090;
+    left: 1em;
+    right: 1em;
+    bottom: -0.5em;
+    z-index: 1;
+    opacity: 0.5; }
+
 code[class*="language-"],
-pre[class*="language-"].-qacfbcee71-b6d948b82 {
+pre[class*="language-"] {
   color: black;
   background: none;
-  text-shadow: 0 1px white;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -5906,32 +5920,43 @@ pre[class*="language-"].-qacfbcee71-b6d948b82 {
   hyphens: none; }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"].-qacfbcee71-b6d948b82::-moz-selection, code[class*="language-"] ::-moz-selection.-qacfbcee71-b6d948b82 {
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: #b3d4fc; }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"].-qacfbcee71-b6d948b82::selection, code[class*="language-"] ::selection.-qacfbcee71-b6d948b82 {
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
   background: #b3d4fc; }
 
-@media.-qacfbcee71-b6d948b82 print.-qacfbcee71-b6d948b82 {
+@media print {
   code[class*="language-"],
-  pre[class*="language-"].-qacfbcee71-b6d948b82 {
+  pre[class*="language-"] {
     text-shadow: none; } }
 
 /* Code blocks */
-pre[class*="language-"].-qacfbcee71-b6d948b82 {
+pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
-  overflow: auto; }
+  margin: 2rem 0;
+  overflow: auto;
+  position: relative; }
+  pre[class*="language-"]:after {
+    content: attr(lang);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: slategray;
+    opacity: 0.4;
+    transition: opacity 1s; }
+  pre[class*="language-"]:hover:after {
+    opacity: 0.7; }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"].-qacfbcee71-b6d948b82 {
+pre[class*="language-"] {
   background: #f5f2f0; }
 
 /* Inline code */
-:not.-qacfbcee71-b6d948b82(pre.-qacfbcee71-b6d948b82) > code[class*="language-"].-qacfbcee71-b6d948b82 {
+:not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
   white-space: normal; }
@@ -5939,13 +5964,13 @@ pre[class*="language-"].-qacfbcee71-b6d948b82 {
 .token.comment,
 .token.prolog,
 .token.doctype,
-.token.cdata.-qacfbcee71-b6d948b82 {
+.token.cdata {
   color: slategray; }
 
-.token.punctuation.-qacfbcee71-b6d948b82 {
+.token.punctuation {
   color: #999; }
 
-.namespace.-qacfbcee71-b6d948b82 {
+.namespace {
   opacity: .7; }
 
 .token.property,
@@ -5954,7 +5979,7 @@ pre[class*="language-"].-qacfbcee71-b6d948b82 {
 .token.number,
 .token.constant,
 .token.symbol,
-.token.deleted.-qacfbcee71-b6d948b82 {
+.token.deleted {
   color: #905; }
 
 .token.selector,
@@ -5962,46 +5987,45 @@ pre[class*="language-"].-qacfbcee71-b6d948b82 {
 .token.string,
 .token.char,
 .token.builtin,
-.token.inserted.-qacfbcee71-b6d948b82 {
+.token.inserted {
   color: #690; }
 
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
-.style.-qacfbcee71-b6d948b82 .token.string.-qacfbcee71-b6d948b82 {
-  color: #a67f59;
-  background: rgba(255, 255, 255, 0.5); }
+.style .token.string {
+  color: #a67f59; }
 
 .token.atrule,
 .token.attr-value,
-.token.keyword.-qacfbcee71-b6d948b82 {
+.token.keyword {
   color: #07a; }
 
-.token.function.-qacfbcee71-b6d948b82 {
+.token.function {
   color: #DD4A68; }
 
 .token.regex,
 .token.important,
-.token.variable.-qacfbcee71-b6d948b82 {
+.token.variable {
   color: #e90; }
 
 .token.important,
-.token.bold.-qacfbcee71-b6d948b82 {
+.token.bold {
   font-weight: bold; }
 
-.token.italic.-qacfbcee71-b6d948b82 {
+.token.italic {
   font-style: italic; }
 
-.token.entity.-qacfbcee71-b6d948b82 {
+.token.entity {
   cursor: help; }
-aside.-q2797d962b-d4dffb7e3 {
+aside.-q1a8de7f38-54affc7ec {
   width: 300px;
   background-color: rgba(12, 148, 67, 0.1);
   height: 100%;
   overflow-y: scroll; }
 
-h1.-q2797d962b-d4dffb7e3 {
+h1.-q1a8de7f38-54affc7ec {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -6009,11 +6033,11 @@ h1.-q2797d962b-d4dffb7e3 {
   font-weight: 200;
   font-size: 2rem; }
 
-.nav-list.-q2797d962b-d4dffb7e3 {
+.nav-list.-q1a8de7f38-54affc7ec {
   padding: 1rem 2rem;
   font-size: larger; }
-  .nav-list.-q2797d962b-d4dffb7e3 li.-q2797d962b-d4dffb7e3 {
+  .nav-list.-q1a8de7f38-54affc7ec li.-q1a8de7f38-54affc7ec {
     margin: 0.5rem 0; }
 
-a.active.-q2797d962b-d4dffb7e3 {
+a.active.-q1a8de7f38-54affc7ec {
   font-weight: bold; }
