@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="-q92345dfc6-92b46e4a7">
+<html lang="en" class="-qd168e3422-de304a577">
   <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,26 +15,26 @@
   <meta name="theme-color" content="#ffffff">
 <link href="build-config.css" rel="stylesheet"></head>
 
-  <body class="-q92345dfc6-92b46e4a7">
-    <div class="container-fluid page-container -q92345dfc6-92b46e4a7">
-      <div class="row -q92345dfc6-92b46e4a7">
-        <aside class="-q2867b4285-489ea6977">
-  <h1 class="-q2867b4285-489ea6977">Quoia</h1>
-  <ul class="list-unstyled nav-list -q2867b4285-489ea6977">
-    <li class="-q2867b4285-489ea6977"><a  href="../" class="-q2867b4285-489ea6977">Home</a></li>
-    <li class="-q2867b4285-489ea6977"><a  href="../getting-started" class="-q2867b4285-489ea6977">Getting Started</a></li>
-    <li class="-q2867b4285-489ea6977"><a class="active -q2867b4285-489ea6977" href="../build-config">Build Configuration</a></li>
-    <li class="-q2867b4285-489ea6977"><a  href="../components" class="-q2867b4285-489ea6977">Components</a></li>
+  <body class="-qd168e3422-de304a577">
+    <div class="container-fluid page-container -qd168e3422-de304a577">
+      <div class="row -qd168e3422-de304a577">
+        <aside class="-q580b7cdd4-b095e3c45">
+  <h1 class="-q580b7cdd4-b095e3c45">Quoia</h1>
+  <ul class="list-unstyled nav-list -q580b7cdd4-b095e3c45">
+    <li class="-q580b7cdd4-b095e3c45"><a  href="../" class="-q580b7cdd4-b095e3c45">Home</a></li>
+    <li class="-q580b7cdd4-b095e3c45"><a  href="../getting-started" class="-q580b7cdd4-b095e3c45">Getting Started</a></li>
+    <li class="-q580b7cdd4-b095e3c45"><a class="active -q580b7cdd4-b095e3c45" href="../build-config">Build Configuration</a></li>
+    <li class="-q580b7cdd4-b095e3c45"><a  href="../components" class="-q580b7cdd4-b095e3c45">Components</a></li>
   </ul>
 </aside>
 
-        <div class="col right-col-parent -q92345dfc6-92b46e4a7">
-          <div class="right-col -q92345dfc6-92b46e4a7">
-            <h2 class="display-4 text-center mb-4 -q92345dfc6-92b46e4a7">Build Configuration</h2>
-            <p class="-q92345dfc6-92b46e4a7">
+        <div class="col right-col-parent -qd168e3422-de304a577">
+          <div class="right-col -qd168e3422-de304a577">
+            <h2 class="display-4 text-center mb-4 -qd168e3422-de304a577">Build Configuration</h2>
+            <p class="-qd168e3422-de304a577">
               A typical build file for Quoia looks like this:
             </p>
-            <pre lang="javascript" class="-q92345dfc6-92b46e4a7"><code class="language-javascript -q92345dfc6-92b46e4a7">// Imports
+            <pre lang="javascript" class="-qd168e3422-de304a577"><code class="language-javascript -qd168e3422-de304a577">// Imports
 const { build } &#x3D; require(&#x27;quoia&#x27;);
 
 // Configuration
@@ -46,47 +46,47 @@ let config &#x3D; {
 // Build with Quoia
 build(config);
 </code></pre>
-            <p class="-q92345dfc6-92b46e4a7">
-              The <code class="-q92345dfc6-92b46e4a7">config</code> object takes a number of parameters to tweak how
+            <p class="-qd168e3422-de304a577">
+              The <code class="-qd168e3422-de304a577">config</code> object takes a number of parameters to tweak how
               Quoia behaves.
             </p>
-            <ul class="-q92345dfc6-92b46e4a7">
-              <h4 class="mt-4 mb-4 -q92345dfc6-92b46e4a7">Required:</h4>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">outDir {string}</code> - Output directory that Quoia will build to. This is a file path
+            <ul class="-qd168e3422-de304a577">
+              <h4 class="mt-4 mb-4 -qd168e3422-de304a577">Required:</h4>
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">outDir {string}</code> - Output directory that Quoia will build to. This is a file path
                 relative to the build script file.
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">rootPage {Comonent}</code> - This is the component that should act as the root page of your
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">rootPage {Comonent}</code> - This is the component that should act as the root page of your
                 site.
               </li>
-              <h4 class="mt-4 mb-4 -q92345dfc6-92b46e4a7">Optional:</h4>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">rootCopy {string[]}</code> - An array of relative paths to copy directly to the output
+              <h4 class="mt-4 mb-4 -qd168e3422-de304a577">Optional:</h4>
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">rootCopy {string[]}</code> - An array of relative paths to copy directly to the output
                 directory. This is ideal for static asset folders and the like. These can be folders or files.
-                If you are referencing a folder, including a final <code class="-q92345dfc6-92b46e4a7">/</code> will copy the <em class="-q92345dfc6-92b46e4a7">contents</em>
+                If you are referencing a folder, including a final <code class="-qd168e3422-de304a577">/</code> will copy the <em class="-qd168e3422-de304a577">contents</em>
                 of the folder to the output directory, not the folder itself.
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">templatingEngine {'handlebars'|'none'}</code> - Specifies a templating engine to pass all
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">templatingEngine {'handlebars'|'none'}</code> - Specifies a templating engine to pass all
                 templates through. Quoia has no dependencies, but it does support a few external tools, such as
                 handlebars. In order to use this feature, you have to install handlebars:
 
-                <pre lang="sh" class="-q92345dfc6-92b46e4a7"><code class="language-bash -q92345dfc6-92b46e4a7">$ npm install handlebars</code></pre>
+                <pre lang="sh" class="-qd168e3422-de304a577"><code class="language-bash -qd168e3422-de304a577">$ npm install handlebars</code></pre>
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">cssPreprocessor {'sass'|'none'}</code> - Specifies a CSS preprocessor to use internally.
-                In order to take advantage of Sass, you have to install <code class="-q92345dfc6-92b46e4a7">node-sass</code>:
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">cssPreprocessor {'sass'|'none'}</code> - Specifies a CSS preprocessor to use internally.
+                In order to take advantage of Sass, you have to install <code class="-qd168e3422-de304a577">node-sass</code>:
 
-                <pre lang="sh" class="-q92345dfc6-92b46e4a7"><code class="language-bash -q92345dfc6-92b46e4a7">$ npm install node-sass</code></pre>
+                <pre lang="sh" class="-qd168e3422-de304a577"><code class="language-bash -qd168e3422-de304a577">$ npm install node-sass</code></pre>
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">cssIncludePaths {string[]}</code> - When using Sass, Quoia doesn't pass file paths. Instead,
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">cssIncludePaths {string[]}</code> - When using Sass, Quoia doesn't pass file paths. Instead,
                 it passes the raw stylesheet contents, so Sass doesn't know where to look when resolving imports.
-                To solve this, you'll have to pass in an array of <em class="-q92345dfc6-92b46e4a7">absolute</em> paths where Sass files will be.
-                For example, to have sass look inside of <code class="-q92345dfc6-92b46e4a7">./node_modules</code>, you could do:
+                To solve this, you'll have to pass in an array of <em class="-qd168e3422-de304a577">absolute</em> paths where Sass files will be.
+                For example, to have sass look inside of <code class="-qd168e3422-de304a577">./node_modules</code>, you could do:
 
-                <pre lang="javascript" class="-q92345dfc6-92b46e4a7"><code class="language-javascript -q92345dfc6-92b46e4a7">// Imports
+                <pre lang="javascript" class="-qd168e3422-de304a577"><code class="language-javascript -qd168e3422-de304a577">// Imports
 const { build } &#x3D; require(&#x27;quoia&#x27;);
 const path &#x3D; require(&#x27;fs&#x27;);
 
@@ -104,20 +104,20 @@ let config &#x3D; {
 build(config);
 </code></pre>
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">scriptInsertionPosition {'body'|'head'}</code> - This specifies the insertion point for script
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">scriptInsertionPosition {'body'|'head'}</code> - This specifies the insertion point for script
                 tags. Since Quoia will automatically concat scripts into one file and dynamically insert the script,
                 you can specify if the script should be inserted in the head tag or at the end of the body tag.
                 (It inserts at end of body by default).
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">scriptTransform {Function}</code> - This is a pre-write transform you can apply to scripts in the project.
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">scriptTransform {Function}</code> - This is a pre-write transform you can apply to scripts in the project.
                 It gets passed two parameters: the script contents, and the output directory for this script. The function
                 should return a string that will be written to the script. You can use this function to transform the script
                 with external tools, like uglify for example.
               </li>
-              <li class="-q92345dfc6-92b46e4a7">
-                <code class="-q92345dfc6-92b46e4a7">styleTransform {Function}</code> - This function works the same as <code class="-q92345dfc6-92b46e4a7">scriptTransform</code> but
+              <li class="-qd168e3422-de304a577">
+                <code class="-qd168e3422-de304a577">styleTransform {Function}</code> - This function works the same as <code class="-qd168e3422-de304a577">scriptTransform</code> but
                 for styles. The two parameters that are passed are the style contents and the output directory for the styles.
               </li>
             </ul>

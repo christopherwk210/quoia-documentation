@@ -5873,13 +5873,13 @@ html, body {
   height: 100%; }
 
 .right-col-parent {
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-bottom: 7rem; }
 
 .right-col {
   max-width: 800px;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-top: 4rem; }
 .prism-topper {
   margin-bottom: -2rem;
@@ -6019,15 +6019,15 @@ pre[class*="language-"] {
 
 .token.entity {
   cursor: help; }
-li.-qf65a22e56-719446f17 {
+li.-qf02ac771e-aad038b05 {
   margin: 0.5em 0; }
-aside.-q2867b4285-489ea6977 {
+aside.-q580b7cdd4-b095e3c45 {
   width: 300px;
   background-color: rgba(12, 148, 67, 0.1);
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: auto; }
 
-h1.-q2867b4285-489ea6977 {
+h1.-q580b7cdd4-b095e3c45 {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -6035,11 +6035,11 @@ h1.-q2867b4285-489ea6977 {
   font-weight: 200;
   font-size: 2rem; }
 
-.nav-list.-q2867b4285-489ea6977 {
+.nav-list.-q580b7cdd4-b095e3c45 {
   padding: 1rem 2rem;
   font-size: larger; }
-  .nav-list.-q2867b4285-489ea6977 li.-q2867b4285-489ea6977 {
+  .nav-list.-q580b7cdd4-b095e3c45 li.-q580b7cdd4-b095e3c45 {
     margin: 0.5rem 0; }
 
-a.active.-q2867b4285-489ea6977 {
+a.active.-q580b7cdd4-b095e3c45 {
   font-weight: bold; }
