@@ -1,7 +1,7 @@
 {
   "name": "quoia-documentation",
   "version": "1.0.0",
-  "description": "Documentation source for Quoia.",
+  "description": "Documentation for Quoia.",
   "scripts": {
     "build": "gulp build",
     "dev": "node quoia.build.js && gulp dev"
