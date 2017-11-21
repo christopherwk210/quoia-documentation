@@ -5881,20 +5881,146 @@ html, body {
   margin: 0 auto;
   overflow-y: scroll;
   padding-top: 4rem; }
-.main-header.-q6b05075f0-253d85230 {
-  margin-top: 5rem;
-  position: relative; }
-  .main-header.-q6b05075f0-253d85230:before {
+.prism-topper {
+  margin-bottom: -2rem;
+  margin-top: 2rem;
+  background-color: #F5F2F0;
+  position: relative;
+  padding-top: 0.5em;
+  padding-left: 1em; }
+  .prism-topper code {
+    background-color: inherit;
+    padding: 0; }
+  .prism-topper:after {
     content: '';
-    background-image: url("/assets/images/quoia.png");
-    width: 90px;
-    height: 120px;
     position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 50%;
-    transform: translateX(-50%) translateY(-100%); }
+    border-bottom: 1px dashed #758090;
+    left: 1em;
+    right: 1em;
+    bottom: -0.5em;
+    z-index: 1;
+    opacity: 0.5; }
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  background: none;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none; } }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 2rem 0;
+  overflow: auto;
+  position: relative; }
+  pre[class*="language-"]:after {
+    content: attr(lang);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: slategray;
+    opacity: 0.4;
+    transition: opacity 1s; }
+  pre[class*="language-"]:hover:after {
+    opacity: 0.7; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #999; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59; }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a; }
+
+.token.function {
+  color: #DD4A68; }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+li.-q78c1a9445-2beeb920c {
+  margin: 0.5em 0; }
 aside.-q42ad43097-6549da14d {
   width: 300px;
   background-color: rgba(12, 148, 67, 0.1);

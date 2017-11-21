@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <quoia-head>
+  <body>
+    <div class="container-fluid page-container">
+      <div class="row">
+        <quoia-sidebar>
+        <div class="col right-col-parent">
+          <div class="right-col">
+            <h2 class="display-4 text-center mb-4">Components</h2>
+            <p>
+              Quoia is built with components. A component can represent a full page of your site, or
+              just a section of it. It's highly recommended that you read through the
+              <a href="/getting-started">getting started</a> to get a feel for how components work.
+            </p>
+            <p>
+              A typical component looks like this:
+            </p>
+            <pre lang="javascript"><code class="language-javascript">{{componentSample}}</code></pre>
+            <p>
+              A component can take a large number of options:
+            </p>
+            <ul>
+              <h4 class="mt-4 mb-4">Required:</h4>
+              <li>
+                <code>template {string}</code> - This is the relative path to the template file for your template.
+                This will normally be an HTML file, but if you use handlebars it can be a .handlebars file.
+              </li>
+              <li>
+                <code>name {string}</code> - This is the internal name of your component. When a component is a subpage,
+                this property will define the folder it goes into. In other words, it will define the URL route of the subpage.
+              </li>
+              <h4 class="mt-4 mb-4">Optional:</h4>
+              <li>
+                <code>selector {string}</code> - This is the selector for the component. If you are going to import
+                this component, this selector defines the tag to use in your templates as <code>&lt;selector&gt;</code>.
+              </li>
+              <li>
+                <p>
+                  <code>imports {Array&lt;Component|ComponentDescriptor&gt;}</code> - This is an array of components to use
+                  inside of your template. Importing components is what allows you to reference their selector inside your
+                  template.
+                </p>
+                
+                <p>
+                  You can directly import a component, or you can import a component as a <code>ComponentDescriptor</code>.
+                  This is so that you can override values when working with a templating engine. A ComponentDescriptor is just
+                  an object that has two properties:
+
+                  <ul>
+                    <li><code>component</code> - Component to import</li>
+                    <li><code>values</code> - Values to override for templating</li>
+                  </ul>
+
+                  These values override the values on the component itself.
+                </p>
+              </li>
+              <li>
+                <code>externalStyles {string[]}</code> - An array of relative paths pointing to styles to apply to
+                this component. Note that all styles used this way are scoped to the element, so they won't affect styles
+                of other components. This is accomplished by using a special component id class in all of your styles
+                and elements. If you are working with dynamic elements you will need to put styles in the
+                <code>globalStyles</code> parameter so they are not scoped to the component id class.
+              </li>
+              <li>
+                <code>externalScripts {string[]}</code> - An array of relative paths pointing to scripts to apply
+                to this component. These scripts are all combined into one file, in order they are referenced.
+              </li>
+              <li>
+                <code>values {Object}</code> - This is an object to pass directly to your templating engine, if used.
+              </li>
+              <li>
+                <code>globalStyles {string[]}</code> - This is an array of relative paths pointing to styles to use
+                in this component, and all subpages of this component. These styles are not scoped.
+              </li>
+              <li>
+                <code>globalScripts {string[]}</code> - This is an array of relative paths pointing to scripts to use
+                in this component, and all subpages of this component. These are applied before <code>externalScripts</code>.
+              </li>
+              <li>
+                <code>children {Array&lt;Component|ComponentDescriptor&gt;}</code> - This array defines the subpages
+                of the current component. This is how general routing is set up with child pages.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

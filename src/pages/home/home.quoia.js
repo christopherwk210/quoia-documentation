@@ -38,7 +38,8 @@ let HomePage = new Component({
   ],
   children: [
     require('../getting-started/getting-started.quoia'),
-    require('../build-configuration/build-configuration.quoia')
+    require('../build-configuration/build-configuration.quoia'),
+    require('../components/components.quoia')
   ]
 });
 
