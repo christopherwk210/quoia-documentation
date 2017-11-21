@@ -13,7 +13,7 @@ let SidebarComponent = new Component({
     './sidebar.scss'
   ],
   values: {
-    root: '.'
+    root: './'
   }
 });
 

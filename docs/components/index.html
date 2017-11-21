@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="-q6142c4075-0cc1beadc">
+<html lang="en" class="-qf65a22e56-719446f17">
   <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,31 +15,31 @@
   <meta name="theme-color" content="#ffffff">
 <link href="components.css" rel="stylesheet"></head>
 
-  <body class="-q6142c4075-0cc1beadc">
-    <div class="container-fluid page-container -q6142c4075-0cc1beadc">
-      <div class="row -q6142c4075-0cc1beadc">
-        <aside class="-qa6b1e9ea5-e11122295">
-  <h1 class="-qa6b1e9ea5-e11122295">Quoia</h1>
-  <ul class="list-unstyled nav-list -qa6b1e9ea5-e11122295">
-    <li class="-qa6b1e9ea5-e11122295"><a  href="../" class="-qa6b1e9ea5-e11122295">Home</a></li>
-    <li class="-qa6b1e9ea5-e11122295"><a  href="../getting-started" class="-qa6b1e9ea5-e11122295">Getting Started</a></li>
-    <li class="-qa6b1e9ea5-e11122295"><a  href="../build-config" class="-qa6b1e9ea5-e11122295">Build Configuration</a></li>
-    <li class="-qa6b1e9ea5-e11122295"><a class="active -qa6b1e9ea5-e11122295" href="../components">Components</a></li>
+  <body class="-qf65a22e56-719446f17">
+    <div class="container-fluid page-container -qf65a22e56-719446f17">
+      <div class="row -qf65a22e56-719446f17">
+        <aside class="-q2867b4285-489ea6977">
+  <h1 class="-q2867b4285-489ea6977">Quoia</h1>
+  <ul class="list-unstyled nav-list -q2867b4285-489ea6977">
+    <li class="-q2867b4285-489ea6977"><a  href="../" class="-q2867b4285-489ea6977">Home</a></li>
+    <li class="-q2867b4285-489ea6977"><a  href="../getting-started" class="-q2867b4285-489ea6977">Getting Started</a></li>
+    <li class="-q2867b4285-489ea6977"><a  href="../build-config" class="-q2867b4285-489ea6977">Build Configuration</a></li>
+    <li class="-q2867b4285-489ea6977"><a class="active -q2867b4285-489ea6977" href="../components">Components</a></li>
   </ul>
 </aside>
 
-        <div class="col right-col-parent -q6142c4075-0cc1beadc">
-          <div class="right-col -q6142c4075-0cc1beadc">
-            <h2 class="display-4 text-center mb-4 -q6142c4075-0cc1beadc">Components</h2>
-            <p class="-q6142c4075-0cc1beadc">
+        <div class="col right-col-parent -qf65a22e56-719446f17">
+          <div class="right-col -qf65a22e56-719446f17">
+            <h2 class="display-4 text-center mb-4 -qf65a22e56-719446f17">Components</h2>
+            <p class="-qf65a22e56-719446f17">
               Quoia is built with components. A component can represent a full page of your site, or
               just a section of it. It's highly recommended that you read through the
-              <a href="../getting-started" class="-q6142c4075-0cc1beadc">getting started</a> to get a feel for how components work.
+              <a href="../getting-started" class="-qf65a22e56-719446f17">getting started</a> to get a feel for how components work.
             </p>
-            <p class="-q6142c4075-0cc1beadc">
+            <p class="-qf65a22e56-719446f17">
               A typical component looks like this:
             </p>
-            <pre lang="javascript" class="-q6142c4075-0cc1beadc"><code class="language-javascript -q6142c4075-0cc1beadc">// Imports
+            <pre lang="javascript" class="-qf65a22e56-719446f17"><code class="language-javascript -qf65a22e56-719446f17">// Imports
 const { Component } &#x3D; require(&#x27;quoia&#x27;);
 
 /**
@@ -53,68 +53,68 @@ let HomePage &#x3D; new Component({
 
 module.exports &#x3D; HomePage;
 </code></pre>
-            <p class="-q6142c4075-0cc1beadc">
+            <p class="-qf65a22e56-719446f17">
               A component can take a large number of options:
             </p>
-            <ul class="-q6142c4075-0cc1beadc">
-              <h4 class="mt-4 mb-4 -q6142c4075-0cc1beadc">Required:</h4>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">template {string}</code> - This is the relative path to the template file for your template.
+            <ul class="-qf65a22e56-719446f17">
+              <h4 class="mt-4 mb-4 -qf65a22e56-719446f17">Required:</h4>
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">template {string}</code> - This is the relative path to the template file for your template.
                 This will normally be an HTML file, but if you use handlebars it can be a .handlebars file.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">name {string}</code> - This is the internal name of your component. When a component is a subpage,
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">name {string}</code> - This is the internal name of your component. When a component is a subpage,
                 this property will define the folder it goes into. In other words, it will define the URL route of the subpage.
               </li>
-              <h4 class="mt-4 mb-4 -q6142c4075-0cc1beadc">Optional:</h4>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">selector {string}</code> - This is the selector for the component. If you are going to import
-                this component, this selector defines the tag to use in your templates as <code class="-q6142c4075-0cc1beadc">&lt;selector&gt;</code>.
+              <h4 class="mt-4 mb-4 -qf65a22e56-719446f17">Optional:</h4>
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">selector {string}</code> - This is the selector for the component. If you are going to import
+                this component, this selector defines the tag to use in your templates as <code class="-qf65a22e56-719446f17">&lt;selector&gt;</code>.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <p class="-q6142c4075-0cc1beadc">
-                  <code class="-q6142c4075-0cc1beadc">imports {Array&lt;Component|ComponentDescriptor&gt;}</code> - This is an array of components to use
+              <li class="-qf65a22e56-719446f17">
+                <p class="-qf65a22e56-719446f17">
+                  <code class="-qf65a22e56-719446f17">imports {Array&lt;Component|ComponentDescriptor&gt;}</code> - This is an array of components to use
                   inside of your template. Importing components is what allows you to reference their selector inside your
                   template.
                 </p>
                 
-                <p class="-q6142c4075-0cc1beadc">
-                  You can directly import a component, or you can import a component as a <code class="-q6142c4075-0cc1beadc">ComponentDescriptor</code>.
+                <p class="-qf65a22e56-719446f17">
+                  You can directly import a component, or you can import a component as a <code class="-qf65a22e56-719446f17">ComponentDescriptor</code>.
                   This is so that you can override values when working with a templating engine. A ComponentDescriptor is just
                   an object that has two properties:
 
-                  <ul class="-q6142c4075-0cc1beadc">
-                    <li class="-q6142c4075-0cc1beadc"><code class="-q6142c4075-0cc1beadc">component</code> - Component to import</li>
-                    <li class="-q6142c4075-0cc1beadc"><code class="-q6142c4075-0cc1beadc">values</code> - Values to override for templating</li>
+                  <ul class="-qf65a22e56-719446f17">
+                    <li class="-qf65a22e56-719446f17"><code class="-qf65a22e56-719446f17">component</code> - Component to import</li>
+                    <li class="-qf65a22e56-719446f17"><code class="-qf65a22e56-719446f17">values</code> - Values to override for templating</li>
                   </ul>
 
                   These values override the values on the component itself.
                 </p>
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">externalStyles {string[]}</code> - An array of relative paths pointing to styles to apply to
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">externalStyles {string[]}</code> - An array of relative paths pointing to styles to apply to
                 this component. Note that all styles used this way are scoped to the element, so they won't affect styles
                 of other components. This is accomplished by using a special component id class in all of your styles
                 and elements. If you are working with dynamic elements you will need to put styles in the
-                <code class="-q6142c4075-0cc1beadc">globalStyles</code> parameter so they are not scoped to the component id class.
+                <code class="-qf65a22e56-719446f17">globalStyles</code> parameter so they are not scoped to the component id class.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">externalScripts {string[]}</code> - An array of relative paths pointing to scripts to apply
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">externalScripts {string[]}</code> - An array of relative paths pointing to scripts to apply
                 to this component. These scripts are all combined into one file, in order they are referenced.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">values {Object}</code> - This is an object to pass directly to your templating engine, if used.
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">values {Object}</code> - This is an object to pass directly to your templating engine, if used.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">globalStyles {string[]}</code> - This is an array of relative paths pointing to styles to use
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">globalStyles {string[]}</code> - This is an array of relative paths pointing to styles to use
                 in this component, and all subpages of this component. These styles are not scoped.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">globalScripts {string[]}</code> - This is an array of relative paths pointing to scripts to use
-                in this component, and all subpages of this component. These are applied before <code class="-q6142c4075-0cc1beadc">externalScripts</code>.
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">globalScripts {string[]}</code> - This is an array of relative paths pointing to scripts to use
+                in this component, and all subpages of this component. These are applied before <code class="-qf65a22e56-719446f17">externalScripts</code>.
               </li>
-              <li class="-q6142c4075-0cc1beadc">
-                <code class="-q6142c4075-0cc1beadc">children {Array&lt;Component|ComponentDescriptor&gt;}</code> - This array defines the subpages
+              <li class="-qf65a22e56-719446f17">
+                <code class="-qf65a22e56-719446f17">children {Array&lt;Component|ComponentDescriptor&gt;}</code> - This array defines the subpages
                 of the current component. This is how general routing is set up with child pages.
               </li>
             </ul>

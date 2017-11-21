@@ -9,13 +9,13 @@ const globalValues = require('../../config/global-values');
  * Defines the <head> tag of the document
  */
 let HeadTagComponent = new Component({
-  template: './head-tag.html',
+  template: './head-tag.handlebars',
   selector: 'quoia-head',
   name: 'head',
   values: {
     title: globalValues.title,
     description: globalValues.description,
-    root: '.'
+    root: './'
   }
 });
 

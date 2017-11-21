@@ -26,14 +26,14 @@ let ComponentsPage = new Component({
       component: require('../../components/head-tag/head-tag.quoia'),
       values: {
         title: `${globalValues.title} - Components`,
-        root: '..'
+        root: '../'
       }
     },
     {
       component: require('../../components/sidebar/sidebar.quoia'),
       values: {
         components: true,
-        root: '..'
+        root: '../'
       }
     }
   ],

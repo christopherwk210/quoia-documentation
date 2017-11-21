@@ -24,14 +24,14 @@ let GettingStartedPage = new Component({
       component: require('../../components/head-tag/head-tag.quoia'),
       values: {
         title: `${globalValues.title} - Getting Started`,
-        root: '..'
+        root: '../'
       }
     },
     {
       component: require('../../components/sidebar/sidebar.quoia'),
       values: {
         gettingStarted: true,
-        root: '..'
+        root: '../'
       }
     }
   ],

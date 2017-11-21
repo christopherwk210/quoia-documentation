@@ -26,14 +26,14 @@ let BuildConfigurationPage = new Component({
       component: require('../../components/head-tag/head-tag.quoia'),
       values: {
         title: `${globalValues.title} - Build Configuration`,
-        root: '..'
+        root: '../'
       }
     },
     {
       component: require('../../components/sidebar/sidebar.quoia'),
       values: {
         buildConfiguration: true,
-        root: '..'
+        root: '../'
       }
     }
   ],

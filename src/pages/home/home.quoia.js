@@ -26,13 +26,15 @@ let HomePage = new Component({
     {
       component: require('../../components/head-tag/head-tag.quoia'),
       values: {
-        title: `${globalValues.title} - Home`
+        title: `${globalValues.title} - Home`,
+        root: './'
       }
     },
     {
       component: require('../../components/sidebar/sidebar.quoia'),
       values: {
-        home: true
+        home: true,
+        root: './'
       }
     }
   ],
