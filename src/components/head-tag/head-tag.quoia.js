@@ -14,7 +14,8 @@ let HeadTagComponent = new Component({
   name: 'head',
   values: {
     title: globalValues.title,
-    description: globalValues.description
+    description: globalValues.description,
+    root: '.'
   }
 });
 

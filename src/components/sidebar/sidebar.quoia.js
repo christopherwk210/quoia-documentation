@@ -11,7 +11,10 @@ let SidebarComponent = new Component({
   selector: 'quoia-sidebar',
   externalStyles: [
     './sidebar.scss'
-  ]
+  ],
+  values: {
+    root: '.'
+  }
 });
 
 module.exports = SidebarComponent;

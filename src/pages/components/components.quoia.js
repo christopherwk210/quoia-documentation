@@ -25,13 +25,15 @@ let ComponentsPage = new Component({
     {
       component: require('../../components/head-tag/head-tag.quoia'),
       values: {
-        title: `${globalValues.title} - Components`
+        title: `${globalValues.title} - Components`,
+        root: '..'
       }
     },
     {
       component: require('../../components/sidebar/sidebar.quoia'),
       values: {
-        components: true
+        components: true,
+        root: '..'
       }
     }
   ],
