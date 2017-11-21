@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <quoia-head>
+  <body>
+    <div class="container-fluid page-container">
+      <div class="row">
+        <quoia-sidebar>
+        <div class="col right-col-parent">
+          <div class="right-col">
+            <h2 class="display-4 text-center mb-4">Build Configuration</h2>
+            <p>
+              A typical build file for Quoia looks like this:
+            </p>
+            <pre lang="javascript"><code class="language-javascript">{{buildScriptSample}}</code></pre>
+            <p>
+              The <code>config</code> object takes a number of parameters to tweak how
+              Quoia behaves.
+            </p>
+            <ul>
+              <h4 class="mt-4 mb-4">Required:</h4>
+              <li>
+                <code>outDir {string}</code> - Output directory that Quoia will build to. This is a file path
+                relative to the build script file.
+              </li>
+              <li>
+                <code>rootPage {Comonent}</code> - This is the component that should act as the root page of your
+                site.
+              </li>
+              <h4 class="mt-4 mb-4">Optional:</h4>
+              <li>
+                <code>rootCopy {string[]}</code> - An array of relative paths to copy directly to the output
+                directory. This is ideal for static asset folders and the like. These can be folders or files.
+                If you are referencing a folder, including a final <code>/</code> will copy the <em>contents</em>
+                of the folder to the output directory, not the folder itself.
+              </li>
+              <li>
+                <code>templatingEngine {'handlebars'|'none'}</code> - Specifies a templating engine to pass all
+                templates through. Quoia has no dependencies, but it does support a few external tools, such as
+                handlebars. In order to use this feature, you have to install handlebars:
+
+                <pre lang="sh"><code class="language-bash">$ npm install handlebars</code></pre>
+              </li>
+              <li>
+                <code>cssPreprocessor {'sass'|'none'}</code> - Specifies a CSS preprocessor to use internally.
+                In order to take advantage of Sass, you have to install <code>node-sass</code>:
+
+                <pre lang="sh"><code class="language-bash">$ npm install node-sass</code></pre>
+              </li>
+              <li>
+                <code>cssIncludePaths {string[]}</code> - When using Sass, Quoia doesn't pass file paths. Instead,
+                it passes the raw stylesheet contents, so Sass doesn't know where to look when resolving imports.
+                To solve this, you'll have to pass in an array of <em>absolute</em> paths where Sass files will be.
+                For example, to have sass look inside of <code>./node_modules</code>, you could do:
+
+                <pre lang="javascript"><code class="language-javascript">{{sassSample}}</code></pre>
+              </li>
+              <li>
+                <code>scriptInsertionPosition {'body'|'head'}</code> - This specifies the insertion point for script
+                tags. Since Quoia will automatically concat scripts into one file and dynamically insert the script,
+                you can specify if the script should be inserted in the head tag or at the end of the body tag.
+                (It inserts at end of body by default).
+              </li>
+              <li>
+                <code>scriptTransform {Function}</code> - This is a pre-write transform you can apply to scripts in the project.
+                It gets passed two parameters: the script contents, and the output directory for this script. The function
+                should return a string that will be written to the script. You can use this function to transform the script
+                with external tools, like uglify for example.
+              </li>
+              <li>
+                <code>styleTransform {Function}</code> - This function works the same as <code>scriptTransform</code> but
+                for styles. The two parameters that are passed are the style contents and the output directory for the styles.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
