@@ -11,13 +11,14 @@ html, body {
 }
 
 .right-col-parent {
-  overflow-y: auto;
+  overflow: scroll;
   padding-bottom: 7rem;
+  max-height: 100%;
 }
 
 .right-col {
   max-width: 800px;
   margin: 0 auto;
-  overflow-y: auto;
   padding-top: 4rem;
+  overflow: scroll;
 }
