@@ -38,7 +38,7 @@
     "quoia": "^1.4.20"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "nodemon": "^1.19.1"
   }
